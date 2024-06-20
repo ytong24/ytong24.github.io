@@ -1,0 +1,54 @@
+@import url(./normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+html {
+    /* use modern font stacks (Rounded Sans) as fallbacks: https://modernfontstacks.com */
+    font-family: 'Nunito', ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+body {
+    max-width: 40rem;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.3rem;
+    color: #1f0800;
+    background-color: #fcfcf7;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #0076ba;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#name-tag {
+    padding-left: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+}
+
+#name-tag-pic {}
+
+#portrait {
+    width: 15rem;
+}
+
+#name-tag-info {
+    display: flex;
+    flex-direction: column;
+}
