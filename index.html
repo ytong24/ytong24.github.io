@@ -29,17 +29,30 @@
     <section>
         <h2>About</h2>
         <p>
-            Welcome! I'm Yan Tong, a PhD student at the <a href="https://www.ucsc.edu/about/">University of California,
+            Welcome! I'm Yan, a PhD student at the <a href="https://www.ucsc.edu/about/">University of California,
                 Santa
                 Cruz</a>, advised by Professor <a href="https://users.soe.ucsc.edu/~lkuper/">Lindsey Kuper</a> in the <a
                 href="https://lsd.ucsc.edu/"> LSD
-                lab</a>. I'm doing research on <b>Distributed Systems</b> and <b>Programming Language</b>.
+                lab</a>.
+            My research sits at the intersection of <b>distributed systems</b>, <b>programming languages</b>, and
+            <b>formal verification</b>, with the goal of making strong correctness guarantees practical for real-world
+            systems.
         </p>
+
         <p>
-            Right now, I'm doing research on <b>causality</b>, also known as causal order, which is a crucial safety
-            property in distributed systems. Specifically, I'm working on tweaking the buffer protocol to optimize
-            message delivery and reduce unnecessary message delays, so the time between a message sending and the
-            message delivery will be shortened.
+            My current work focuses on <b>distributed systems refinement</b>, a technique for formally verifying that
+            real-world system implementations satisfy their intended designs. Instead of proving correctness directly on
+            complex production code, we (1) verify a simpler <b>abstraction</b> of the system, and (2) prove that the
+            implementation does not exhibit behaviors that are disallowed by the abstraction (i.e., the implementation
+            matches the abstraction). Step (2) is known as <b>refinement</b>. I study how
+            programming language techniques can help refine real-world implementations and how to design abstractions
+            that can be systematically developed into low-level, high-performance, production-ready distributed systems.
+        </p>
+
+        <p>
+            I have also worked on <b>causality</b> (causal ordering), an important safety property in distributed
+            systems. In this work, I modified the buffer protocol to improve message delivery efficiency and reduce
+            unnecessary delays between message sending and delivery.
         </p>
         <p>
             I had an internship at <a href="https://about.meta.com/realitylabs/">Reality Labs</a> at <a
@@ -65,6 +78,12 @@
         <h2>Teaching</h2>
         <p>At UCSC, as a teaching assistant:</p>
         <ul>
+            <li>
+                <p>
+                    <a href="https://ucsc-cse-210a.github.io/win26/">CSE 210A Programming Languages</a><br>
+                    Winter 2026
+                </p>
+            </li>
             <li>
                 <p>
                     <a href="https://courses.engineering.ucsc.edu/courses/cse114a">CSE114A: Foundations of Programming
