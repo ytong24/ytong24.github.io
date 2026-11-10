@@ -40,19 +40,21 @@
         </p>
 
         <p>
-            My current work focuses on <b>distributed systems refinement</b>, a technique for formally verifying that
-            real-world system implementations satisfy their intended designs. Instead of proving correctness directly on
-            complex production code, we (1) verify a simpler <b>abstraction</b> of the system, and (2) prove that the
-            implementation does not exhibit behaviors that are disallowed by the abstraction (i.e., the implementation
-            matches the abstraction). Step (2) is known as <b>refinement</b>. I study how
-            programming language techniques can help refine real-world implementations and how to design abstractions
-            that can be systematically developed into low-level, high-performance, production-ready distributed systems.
+            I'm currently working on <i>Ironwright</i>, a verification framework for distributed systems in Rust.
+            Developers model and implement distributed systems in a Rust-based shallowly embedded DSL,
+            validate them via explicit-state model checking for rapid iteration, and then “intract” formal
+            specifications from Rust to Lean for rigorous verification. The framework will let developers obtain both
+            verified correctness
+            guarantees and deployable code from the same program.
         </p>
 
         <p>
-            I have also worked on <b>causality</b> (causal ordering), an important safety property in distributed
-            systems. In this work, I modified the buffer protocol to improve message delivery efficiency and reduce
-            unnecessary delays between message sending and delivery.
+            I previously worked on <i>Cykas</i>
+            (“Can you keep a secret?”), a new protocol for sender-side
+            enforcement of causal delivery that sidesteps the conservativeness of the traditional sender-side approach
+            by allowing
+            eager sending of messages and constraining the behavior of
+            their recipients.
         </p>
         <p>
             I had an internship at <a href="https://firebase.google.com/docs/sql-connect">Firebase SQL Connect</a> at <a
